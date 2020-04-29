@@ -17,7 +17,7 @@ The following is an example of the class in use:
 
 ```python
 def main():
-    Gift book = Gift("Harry Potter and the Philosopher's Stone", 2)
+    book = Gift("Harry Potter and the Philosopher's Stone", 2)
 
     print("Gift's name: " + book.get_name())
     print("Gift's weight: " + book.get_weight())
@@ -52,7 +52,7 @@ An example use case of the class is as follows:
 def main():
     book = Gift("Harry Potter and the Philosopher's Stone", 2)
 
-    Ppackage = Package()
+    package = Package()
     package.add_gift(book)
     print(package.total_weight())
 ```
