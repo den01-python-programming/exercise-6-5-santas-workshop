@@ -1,8 +1,12 @@
 import pytest
-from src.gift import Gift
-from src.package import Package
+import os
 
 def test_exercise():
+    os.chdir('src')
+
+    from gift import Gift
+    from package import Package
+
     book = Gift("Harry Potter and the Chamber of Secrets", 3)
 
     assert book.get_name() == "Harry Potter and the Chamber of Secrets"
